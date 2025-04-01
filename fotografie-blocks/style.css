@@ -4,11 +4,11 @@ Theme Name: Fotografie Blocks
 Theme URI: https://catchthemes.com/themes/fotografie-blocks
 Author: Catch Themes
 Author URI: https://catchthemes.com
-Description: Fotografie Blocks is a free modern and creative photography WordPress block theme. It is ideal for professional or freelance photographers, travel journalists, graphic designers, amateur photographers, or photojournalists who want an online foothold for their work. This theme is the block version of our popular theme ΓÇ£FotografieΓÇ¥. And, this theme is perfect for building a gallery or portfolio website. With its amazing layouts, you can showcase your high-res photography beautifully. The theme comes with a dark and light color scheme which expands your presentation options. With its full site editing features, you can easily customize your site easily. There are 17+ different block patterns, 16 Templates, and 9 Template Parts available in this theme. Some of the block patterns are 404 Header, Archive Header, Blog Header, Footer, Footer Three Columns, Header, Header Media Top, Hidden Blog, Post Header, Recent Blog Posts, Search Header, Shop Header, Sidebar Products, and many more. The theme offers many customizable options that let you showcase visual works in a captivating way. Its impressive navigational experience will keep the visitors coming back for more. This theme is fully responsive, user-friendly, and highly customizable.
+Description: Fotografie Blocks is a free modern and creative photography WordPress block theme. It is ideal for professional or freelance photographers, travel journalists, graphic designers, amateur photographers, or photojournalists who want an online foothold for their work. This theme is the block version of our popular theme “Fotografie”. And, this theme is perfect for building a gallery or portfolio website. With its amazing layouts, you can showcase your high-res photography beautifully. The theme comes with a dark and light color scheme which expands your presentation options. With its full site editing features, you can easily customize your site easily. There are 17+ different block patterns, 16 Templates, and 9 Template Parts available in this theme. Some of the block patterns are 404 Header, Archive Header, Blog Header, Footer, Footer Three Columns, Header, Header Media Top, Hidden Blog, Post Header, Recent Blog Posts, Search Header, Shop Header, Sidebar Products, and many more. The theme offers many customizable options that let you showcase visual works in a captivating way. Its impressive navigational experience will keep the visitors coming back for more. This theme is fully responsive, user-friendly, and highly customizable.
 Requires at least: 5.9
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
-Version: 1.1.1
+Version: 1.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fotografie-blocks
@@ -690,12 +690,11 @@ ul li::marker {
   color: var(--wp--preset--color--meta);
   opacity: 1 !important;
   transition: all 0.5s ease-in-out;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  width: 42px !important;
+  height: 42px !important;
   padding: 9px;
   box-sizing: border-box;
-  font-size: 24px; }
+  font-size: 24px !important; }
 
 #to_top_scrollup:hover,
 #to_top_scrollup:focus {
@@ -2255,6 +2254,55 @@ body .wp-block-inner-page-title {
     .wp-block-gallery .wp-element-caption a:hover {
       color: var(--wp--preset--color--primary) !important; }
 
+/* Primary Search Custom */
+.wp-primary-search {
+  position: relative;
+  z-index: 1; }
+  .wp-primary-search .wp-search-toggle-container {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 42px;
+    height: 42px; }
+    .wp-primary-search .wp-search-toggle-container .wp-search-toggle {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      -webkit-mask: url(assets/images/search.svg) no-repeat 50% 50%;
+      mask-size: auto;
+      mask: url(assets/images/search.svg) no-repeat 50% 50%;
+      mask-size: auto;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      background-color: var(--wp--preset--color--foreground);
+      text-indent: -9999px;
+      transition: all 0.3s ease-in-out;
+      line-height: 1; }
+    .wp-primary-search .wp-search-toggle-container:is(:hover, :focus) .wp-search-toggle {
+      background-color: var(--wp--preset--color--meta); }
+  .wp-primary-search .wp-block-search {
+    padding: 0; }
+  .wp-primary-search .wp-search-container {
+    display: none;
+    position: absolute;
+    top: 100%; }
+  .wp-primary-search.toggled-on .wp-search-toggle {
+    -webkit-mask: url(assets/images/close.svg) no-repeat 50% 50%;
+    mask-size: auto;
+    mask: url(assets/images/close.svg) no-repeat 50% 50%;
+    mask-size: auto;
+    -webkit-mask-size: cover;
+    mask-size: cover; }
+  .wp-primary-search.toggled-on .wp-search-container {
+    margin-top: 0;
+    display: block;
+    width: 320px;
+    padding: clamp(14px, 1.5vw, 21px) 28px;
+    background-color: var(--wp--preset--color--secondary);
+    animation: smoothScrollBack 0s backwards, fadein 0.6s; }
+
 /* --- 4
 -------------------------------------------------------- */
 /* --- Block Woo-Commerce
@@ -3295,9 +3343,12 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantit
   transition: all 0.3s ease-in-out; }
 
 .wc-block-mini-cart__button {
-  width: 40px;
-  height: 40px;
+  padding: 9px;
   transition: all 0.3s ease-in-out; }
+
+.wc-block-mini-cart__button .wc-block-mini-cart__icon {
+  width: 24px;
+  height: 24px; }
 
 .wp-block-woocommerce-customer-account a .wc-block-customer-account__account-icon {
   width: 22px;
@@ -3362,7 +3413,8 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantit
   background-color: transparent;
   border: 1px solid var(--wp--preset--color--border-color);
   box-shadow: none;
-  color: var(--wp--preset--color--foreground); }
+  color: var(--wp--preset--color--foreground);
+  margin-top: 0; }
 
 .woocommerce #respond input#submit:hover,
 .woocommerce #respond input#submit:focus,
@@ -3378,7 +3430,7 @@ table.wc-block-cart-items .wc-block-cart-items__row .wc-block-cart-item__quantit
 .wc-block-components-button:not(.is-link).contained:hover,
 .wc-block-mini-cart__footer .wc-block-mini-cart__footer-actions .wc-block-mini-cart__footer-cart.wc-block-components-button:hover,
 .wc-block-mini-cart__footer .wc-block-mini-cart__footer-actions .wc-block-mini-cart__footer-cart.wc-block-components-button:focus {
-  background: var(--wp--preset--color--dark);
+  background: var(--wp--preset--color--meta);
   color: var(--wp--preset--color--color-light);
   border-color: transparent; }
 
@@ -3841,7 +3893,7 @@ cart-collaterals .cart_totals .shop_table td {
       background: #fff;
       font-size: 16px;
       font-weight: 600;
-      color: var(--wp--preset--color--foreground);
+      color: var(--wp--preset--color--background);
       text-indent: 0;
       transform: translate(-50%, -50%);
       text-align: center; }
@@ -3849,19 +3901,19 @@ cart-collaterals .cart_totals .shop_table td {
 .wp-block-widget-area .wc-block-components-checkbox {
   margin-top: 0; }
 
-.wp-filter-by-color .wc-block-attribute-filter li input#blue ~ .wc-block-components-checkbox__label::before {
+.wp-filter-by-color .wc-block-attribute-filter li input[value="blue"] ~ .wc-block-components-checkbox__label::before {
   background-color: blue; }
 
-.wp-filter-by-color .wc-block-attribute-filter li input#gray ~ .wc-block-components-checkbox__label::before {
+.wp-filter-by-color .wc-block-attribute-filter li input[value="gray"] ~ .wc-block-components-checkbox__label::before {
   background-color: gray; }
 
-.wp-filter-by-color .wc-block-attribute-filter li input#green ~ .wc-block-components-checkbox__label::before {
+.wp-filter-by-color .wc-block-attribute-filter li input[value="green"] ~ .wc-block-components-checkbox__label::before {
   background-color: green; }
 
-.wp-filter-by-color .wc-block-attribute-filter li input#red ~ .wc-block-components-checkbox__label::before {
+.wp-filter-by-color .wc-block-attribute-filter li input[value="red"] ~ .wc-block-components-checkbox__label::before {
   background-color: red; }
 
-.wp-filter-by-color .wc-block-attribute-filter li input#yellow ~ .wc-block-components-checkbox__label::before {
+.wp-filter-by-color .wc-block-attribute-filter li input[value="yellow"] ~ .wc-block-components-checkbox__label::before {
   background-color: yellow; }
 
 .wp-filter-by-size .wc-block-attribute-filter li .wc-block-components-checkbox__label {
@@ -3870,17 +3922,17 @@ cart-collaterals .cart_totals .shop_table td {
   height: 32px;
   display: block; }
 
-.wp-filter-by-size .wc-block-attribute-filter li label[for="large"] .wc-block-components-checkbox__label::before {
+.wp-filter-by-size .wc-block-attribute-filter li label input[value="large"] ~ .wc-block-components-checkbox__label:before {
   content: "L"; }
 
-.wp-filter-by-size .wc-block-attribute-filter li label[for="medium"] .wc-block-components-checkbox__label::before {
+.wp-filter-by-size .wc-block-attribute-filter li label input[value="medium"] ~ .wc-block-components-checkbox__label:before {
   content: "M"; }
 
-.wp-filter-by-size .wc-block-attribute-filter li label[for="small"] .wc-block-components-checkbox__label::before {
+.wp-filter-by-size .wc-block-attribute-filter li label input[value="small"] ~ .wc-block-components-checkbox__label:before {
   content: "S"; }
 
 .wp-filter-by-size .wc-block-attribute-filter li input:checked ~ .wc-block-components-checkbox__label::before {
-  color: var(--wp--preset--color--primary); }
+  color: var(--wp--preset--color--background); }
 
 .wc-block-components-price-slider,
 .wc-block-attribute-filter {
@@ -4113,7 +4165,8 @@ cart-collaterals .cart_totals .shop_table td {
 .wc-blocks-components-select .wc-blocks-components-select__select {
   color: var(--wp--preset--color--body-text);
   background-color: var(--wp--preset--color--background);
-  border-radius: 0; }
+  border-radius: 0;
+  padding: 1.5em .8em .5em; }
   .wc-blocks-components-select .wc-blocks-components-select__select:focus {
     border-color: var(--wp--preset--color--text-link);
     color: var(--wp--preset--color--foreground); }
@@ -4121,7 +4174,8 @@ cart-collaterals .cart_totals .shop_table td {
 .wc-blocks-components-select .wc-blocks-components-select__container {
   border-radius: 0;
   border: 1px solid var(--wp--preset--color--border-color);
-  background-color: var(--wp--preset--color--background); }
+  background-color: var(--wp--preset--color--background);
+  height: auto; }
 
 .woocommerce-account .woocommerce-MyAccount-navigation li a {
   color: var(--wp--preset--color--body-text); }
@@ -4129,9 +4183,14 @@ cart-collaterals .cart_totals .shop_table td {
 .wp-block-woocommerce-customer-account a {
   padding: 10px; }
   .wp-block-woocommerce-customer-account a .icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 !important; }
+    width: 22px;
+    height: 22px;
+    margin: 0 !important;
+    top: 0; }
+
+.wc-blocks-components-select .wc-blocks-components-select__label {
+  color: var(--wp--preset--color--ironside-grey);
+  left: 0.8em; }
 
 /*--------------------------------------------------------------
 # Components
@@ -6077,3 +6136,5 @@ a:focus svg.icon,
 .wp-block-social-links.is-style-default .wp-social-link a:hover,
 .wp-block-social-links.is-style-default .wp-social-link a:focus {
   background-color: var(--wp--preset--color--primary); }
+
+/*# sourceMappingURL=style.css.map */

@@ -206,12 +206,11 @@ ul li::marker {
   color: var(--wp--preset--color--meta);
   opacity: 1 !important;
   transition: all 0.5s ease-in-out;
-  border-radius: 50%;
-  width: 42px;
-  height: 42px;
+  width: 42px !important;
+  height: 42px !important;
   padding: 9px;
   box-sizing: border-box;
-  font-size: 24px;
+  font-size: 24px !important;
 }
 
 #to_top_scrollup:hover,
@@ -2230,6 +2229,73 @@ body .wp-block-inner-page-title {
       &:hover {
         color: var(--wp--preset--color--primary) !important;
       }
+    }
+  }
+}
+
+
+/* Primary Search Custom */
+.wp-primary-search {
+  position: relative;
+  z-index: 1;
+  .wp-search-toggle-container {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    .wp-search-toggle {
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      -webkit-mask: url(assets/images/search.svg) no-repeat 50% 50%;
+      mask-size: auto;
+      mask: url(assets/images/search.svg) no-repeat 50% 50%;
+      mask-size: auto;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      background-color: var(--wp--preset--color--foreground);
+      text-indent: -9999px;
+      transition: all 0.3s ease-in-out;
+      line-height: 1;
+    }
+
+    &:is(:hover, :focus) {
+      .wp-search-toggle {
+        background-color: var(--wp--preset--color--meta);
+      }
+    }
+  }
+
+  .wp-block-search {
+    padding: 0;
+  }
+
+  .wp-search-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+
+  &.toggled-on {
+    .wp-search-toggle {
+      -webkit-mask: url(assets/images/close.svg) no-repeat 50% 50%;
+      mask-size: auto;
+      mask: url(assets/images/close.svg) no-repeat 50% 50%;
+      mask-size: auto;
+      -webkit-mask-size: cover;
+      mask-size: cover;
+    }
+
+    .wp-search-container {
+      margin-top: 0;
+      display: block;
+      width: 320px;
+      padding: clamp(14px, 1.5vw, 21px) 28px;
+      background-color: var(--wp--preset--color--secondary);
+      animation: smoothScrollBack 0s backwards, fadein 0.6s;
     }
   }
 }

@@ -18,6 +18,31 @@
 				<!-- wp:site-tagline {"textAlign":"center"} /-->
 			</div>
 			<!-- /wp:group -->
+			<!-- wp:group {"className":"positioned-search","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group positioned-search">
+				<!-- wp:group {"className":"wp-primary-search","layout":{"type":"default"}} -->
+				<div class="wp-block-group wp-primary-search">
+					<!-- wp:group {"className":"wp-search-toggle-container","layout":{"type":"default"}} -->
+					<div class="wp-block-group wp-search-toggle-container">
+						<!-- wp:group {"className":"wp-search-toggle","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"menu-color","layout":{"type":"default"}} -->
+						<div class="wp-block-group wp-search-toggle has-menu-color-background-color has-background"
+							style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><!-- wp:paragraph -->
+							<p>Search</p>
+							<!-- /wp:paragraph -->
+						</div>
+						<!-- /wp:group -->
+					</div>
+					<!-- /wp:group -->
+
+					<!-- wp:group {"className":"wp-search-container search-container","layout":{"type":"default"}} -->
+					<div class="wp-block-group wp-search-container search-container">
+						<!-- wp:search {"showLabel":false,"placeholder":"Search a Keyword...","buttonText":"Search"} /-->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+			</div>
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 

@@ -1,7 +1,7 @@
 === Fotografie Blocks ===
 Contributors: catchthemes
 Requires at least: 5.9
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,15 @@ When changing the theme style, it is recommended to clear the template customiza
 5. Navigate to Appearance -> Editor in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 1.2 (Released: April 01, 2025) =
+* Added: Order confirmation template
+* Bug Fixed: Header toggle search issue
+* Bug Fixed: Woocommerce filter by size and color issue
+* Updated: To top design
+* Updated: Customer account and mini cart icon size adjusted
+* Updated: Mini cart button colors
+* Updated: WordPress 6.7 ready
 
 = 1.1.1 (Released: September 27, 2024) =
 * Bug Fixed: Mini cart icon color issue
