@@ -47,7 +47,7 @@
 		<!-- /wp:group -->
 
 		<!-- wp:group {"align":"full","style":{"border":{"top":{"color":"var:preset|color|border-color","width":"1px"}},"spacing":{"blockGap":"0px"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
-		<div class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--border-color);border-top-width:1px"><!-- wp:navigation {"icon":"menu","layout":{"icon":"menu","type":"flex","setCascadingProperties":true,"justifyContent":"center"},"style":{"typography":{"textDecoration":"none"},"spacing":{"blockGap":"28px"}}} /-->
+		<div class="wp-block-group alignfull" style="border-top-color:var(--wp--preset--color--border-color);border-top-width:1px"><!-- wp:navigation {"icon":"menu","metadata":{"ignoredHookedBlocks":["woocommerce/customer-account","woocommerce/mini-cart"]},"layout":{"icon":"menu","type":"flex","setCascadingProperties":true,"justifyContent":"center"},"style":{"typography":{"textDecoration":"none"},"spacing":{"blockGap":"28px"}}} /-->
 		</div>
 		<!-- /wp:group -->
 	</div>

@@ -330,7 +330,7 @@ ul.wc-block-grid__products h2.wc-block-components-product-title.wc-block-grid__p
 
 .wc-block-components-product-sort-select .wc-block-components-sort-select__select,
 .woocommerce .woocommerce-ordering select {
-  background: transparent;
+  background: var(--wp--preset--color--secondary);
   cursor: pointer;
   font-size: var(--wp--preset--font-size--tiny);
   padding: 14px;
@@ -447,7 +447,7 @@ legend {
 }
 
 .woocommerce-page .input-text {
-  padding: 0.9rem 0.4rem 0.9rem 0.9rem;
+  padding: 0.9rem 0.4rem;
 }
 
 .woocommerce .quantity .qty {

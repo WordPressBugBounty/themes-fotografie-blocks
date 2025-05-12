@@ -1,7 +1,7 @@
 === Fotografie Blocks ===
 Contributors: catchthemes
 Requires at least: 5.9
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -26,10 +26,15 @@ When changing the theme style, it is recommended to clear the template customiza
 
 == Changelog ==
 
+= 1.2.1 (Released: May 12, 2025) =
+* Updated: Navigation block in header pattern
+* Updated: WooCommerce CSS
+* Updated: WordPress 6.8 ready
+
 = 1.2 (Released: April 01, 2025) =
 * Added: Order confirmation template
 * Bug Fixed: Header toggle search issue
-* Bug Fixed: Woocommerce filter by size and color issue
+* Bug Fixed: WooCommerce filter by size and color issue
 * Updated: To top design
 * Updated: Customer account and mini cart icon size adjusted
 * Updated: Mini cart button colors
