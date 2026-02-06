@@ -1,7 +1,7 @@
 === Fotografie Blocks ===
 Contributors: catchthemes
 Requires at least: 5.9
-Tested up to: 6.8
+Tested up to: 6.9
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,9 @@ When changing the theme style, it is recommended to clear the template customiza
 5. Navigate to Appearance -> Editor in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 1.2.2 (Released: December 31, 2025) =
+* Updated: WordPress 6.9 ready
 
 = 1.2.1 (Released: May 12, 2025) =
 * Updated: Navigation block in header pattern
