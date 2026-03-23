@@ -108,4 +108,20 @@
     max-height: 600px;
 }
 
+// CTA button always white
+.wp-block-cta-default {
+    .wp-block-button .wp-block-button__link {
+        background-color: var(--wp--preset--color--color-light);
+        color: var(--wp--preset--color--color-dark);
+        &:hover {
+            background: var(--wp--preset--color--body-text-alt);
+            color: var(--wp--preset--color--color-light);
+        }
+    }
+
+}
+
+
+
+
 

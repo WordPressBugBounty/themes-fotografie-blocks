@@ -8,12 +8,55 @@
         <div class="wp-block-columns alignwide wp-product-category-with-sidebar wp-block-sidebar-on-right">
             <!-- wp:column {"width":"68.57142857142857%"} -->
             <div class="wp-block-column" style="flex-basis: 68.571428571429%;">
-                <!-- wp:woocommerce/legacy-template {"template":"archive-product"} /--></div>
+                <!-- wp:woocommerce/breadcrumbs {"fontSize":"extra-small"} /-->
+
+                <!-- wp:query-title {"type":"archive","showPrefix":false,"align":"wide","style":{"typography":{"letterSpacing":"0.05em","fontStyle":"normal","fontWeight":"400"}},"fontSize":"extra-large"} /-->
+
+                <!-- wp:woocommerce/store-notices /-->
+
+                <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+                <div class="wp-block-group alignwide">
+                    <!-- wp:woocommerce/product-results-count {"fontSize":"small"} /-->
+
+                    <!-- wp:woocommerce/catalog-sorting /-->
+                </div>
+                <!-- /wp:group -->
+
+                <!-- wp:woocommerce/product-collection {"queryId":3,"query":{"perPage":9,"pages":0,"offset":0,"postType":"product","order":"asc","orderBy":"title","search":"","exclude":[],"inherit":true,"taxQuery":{},"isProductCollectionBlock":true,"featured":false,"woocommerceOnSale":false,"woocommerceStockStatus":["instock","outofstock","onbackorder"],"woocommerceAttributes":[],"woocommerceHandPickedProducts":[],"filterable":false,"relatedBy":{"categories":true,"tags":true}},"tagName":"div","displayLayout":{"type":"flex","columns":3,"shrinkColumns":true},"dimensions":{"widthType":"fill"},"queryContextIncludes":["collection"],"__privatePreviewState":{"isPreview":false,"previewMessage":"Actual products will vary depending on the page being viewed."},"align":"wide"} -->
+                <div class="wp-block-woocommerce-product-collection alignwide"><!-- wp:woocommerce/product-template -->
+                    <!-- wp:template-part {"slug":"product-collection"} /-->
+                    <!-- /wp:woocommerce/product-template -->
+
+                    <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+                    <!-- wp:query-pagination-previous /-->
+
+                    <!-- wp:query-pagination-numbers /-->
+
+                    <!-- wp:query-pagination-next /-->
+                    <!-- /wp:query-pagination -->
+
+                    <!-- wp:woocommerce/product-collection-no-results -->
+                    <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center","flexWrap":"wrap"}} -->
+                    <div class="wp-block-group"><!-- wp:paragraph {"fontSize":"medium"} -->
+                        <p class="has-medium-font-size"><strong>No results found</strong></p>
+                        <!-- /wp:paragraph -->
+
+                        <!-- wp:paragraph -->
+                        <p>You can try <a href="#" class="wc-link-clear-any-filters">clearing any filters</a> or head to
+                            our <a href="#" class="wc-link-stores-home">store's home</a></p>
+                        <!-- /wp:paragraph -->
+                    </div>
+                    <!-- /wp:group -->
+                    <!-- /wp:woocommerce/product-collection-no-results -->
+                </div>
+                <!-- /wp:woocommerce/product-collection -->
+            </div>
             <!-- /wp:column -->
 
             <!-- wp:column {"width":"22.85714285714286%","className":"wp-block-column-sidebar"} -->
             <div class="wp-block-column wp-block-column-sidebar" style="flex-basis: 22.857142857143%;">
-                <!-- wp:template-part {"slug":"sidebar-products","theme":"fotografie-blocks","tagName":"div"} /--></div>
+                <!-- wp:template-part {"slug":"sidebar-products","theme":"fotografie-blocks","tagName":"div"} /-->
+            </div>
             <!-- /wp:column -->
         </div>
         <!-- /wp:columns -->
@@ -22,8 +65,4 @@
 </main>
 <!-- /wp:group -->
 
-
-
 <!-- wp:template-part {"slug":"footer-with-three-columns","tagName":"footer"} /-->
-
-

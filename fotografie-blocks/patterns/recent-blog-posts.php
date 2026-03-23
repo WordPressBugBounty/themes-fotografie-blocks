@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Recent Blog Posts
  * Slug: fotografie-blocks/recent-blog-posts

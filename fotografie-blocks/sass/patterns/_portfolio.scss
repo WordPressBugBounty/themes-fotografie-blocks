@@ -1,7 +1,7 @@
 /* --- Block Portfolio
 -------------------------------------------------------- */
 
-.my-masonry-grid_column > *:after,
+/* .my-masonry-grid_column > *:after,
 .my-masonry-grid_column > *:before {
     content: "";
     display: block;
@@ -30,4 +30,39 @@
 
 .my-masonry-grid_column > *:hover::before {
     transform: translate(0, 0);
+}
+ */
+// Portfolio with category
+
+.wp-block-portfolio-with-category {
+    .wp-block-fse-pro-tabs {
+        max-width: 100%;
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: var(--wp--preset--spacing--30);
+            border: 0;
+            > li {
+                > a {
+                    border-radius: 0;
+                    margin: 0 10px;
+                    padding: 10px;
+                    color: var(--wp--preset--color--body-text);
+                    display: inline-block;
+                    border: 0;
+                    &:hover {
+                        color: var(--wp--preset--color--foreground);
+                        border: 0;
+                    }
+                }
+            }
+            > li.active {
+                > a {
+                    background-color: transparent;
+                    border: none;
+                    color: var(--wp--preset--color--foreground);
+                }
+            }
+        }
+    }
 }

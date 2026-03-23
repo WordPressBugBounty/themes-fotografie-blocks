@@ -1,11 +1,9 @@
 /* --- Block Header Top
 -------------------------------------------------------- */
 
-/* .wp-block-header-top {
-    background-color: var(--wp--preset--color--secondary);
-    font-size: var(--wp--preset--font-size--extra-small);
-    padding: 7px 0;
-} */
+header {
+    margin-top: 0;
+}
 
 .support-label {
     display: none;
@@ -191,10 +189,10 @@
     color: var(--wp--preset--color--primary);
 }
 
-.wp-block-header-dark .wp-block-fotografie-blocks-header-search svg,
-.wp-block-header-dark .wp-block-fotografie-blocks-header-social svg,
-.wp-block-header-dark .fotografie-blocks-icons svg,
-.wp-block-header-dark .wp-block-fotografie-blocks-header-search svg .wp-block-header-dark .wp-block-social-search-container .wp-block-social-links.is-style-logos-only .wp-block-social-link-anchor,
+.wp-block-header-dark .wp-block-fse-pro-header-search svg,
+.wp-block-header-dark .wp-block-fse-pro-header-social svg,
+.wp-block-header-dark .fotografie-blocks-pro-icons svg,
+.wp-block-header-dark .wp-block-fse-pro-header-search svg .wp-block-header-dark .wp-block-social-search-container .wp-block-social-links.is-style-logos-only .wp-block-social-link-anchor,
 .wp-block-header-dark .wc-block-mini-cart__button,
 .wp-block-header-dark .wp-block-navigation .wp-block-navigation__submenu-icon {
     color: var(--wp--preset--color--color-light);

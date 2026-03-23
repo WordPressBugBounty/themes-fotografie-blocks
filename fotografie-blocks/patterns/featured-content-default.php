@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Featured Content Default
  * Slug: fotografie-blocks/featured-content-default
@@ -61,11 +60,11 @@
 						<div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"spacing":{"blockGap":"10px","padding":{"top":"28px","right":"28px","bottom":"28px","left":"28px"}},"color":{"background":"#9999971c"}},"className":"wp-block-entry-content"} -->
 							<div class="wp-block-group wp-block-entry-content has-background" style="background-color:#9999971c;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"300","letterSpacing":"2.4px","textTransform":"uppercase"}},"fontSize":"content-heading"} -->
 								<h2 class="wp-block-heading has-content-heading-font-size" style="font-style:normal;font-weight:300;letter-spacing:2.4px;text-transform:uppercase"><?php esc_html_e('Or by Default', 'fotografie-blocks'); ?></h2>
-										<!-- /wp:heading -->
+								<!-- /wp:heading -->
 
-										<!-- wp:paragraph {"style":{"typography":{"fontSize":"11px","fontStyle":"normal","fontWeight":"300","letterSpacing":"1.1px"}},"textColor":"body-text"} -->
-										<p class="has-body-text-color has-text-color" style="font-size:11px;font-style:normal;font-weight:300;letter-spacing:1.1px"><?php esc_html_e('Aug. 13, 2019', 'fotografie-blocks'); ?></p>
-										<!-- /wp:paragraph -->
+								<!-- wp:paragraph {"style":{"typography":{"fontSize":"11px","fontStyle":"normal","fontWeight":"300","letterSpacing":"1.1px"}},"textColor":"body-text"} -->
+								<p class="has-body-text-color has-text-color" style="font-size:11px;font-style:normal;font-weight:300;letter-spacing:1.1px"><?php esc_html_e('Aug. 13, 2019', 'fotografie-blocks'); ?></p>
+								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
 						</div>

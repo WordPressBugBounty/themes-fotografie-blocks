@@ -1,11 +1,11 @@
-# <!=Copyright (C) 2023 Catch Themes
+# <!=Copyright (C) 2012-2026 Catch Themes
 # This file is distributed under the GNU General Public License v2 or later.=!>
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Fotografie Blocks\n"
 "Report-Msgid-Bugs-To: https://catchthemes.com/contact-us/\n"
-"POT-Creation-Date: 2025-12-31 15:22+0545\n"
+"POT-Creation-Date: 2026-03-23 11:43+0545\n"
 "PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Catch Themes <info@catchthemes.com>\n"
 "Language-Team: Catch Themes <info@catchthemes.com>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c\n"
 "X-Poedit-Basepath: ..\n"
 "X-Textdomain-Support: yes\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: inc/about.php:19
@@ -141,68 +141,68 @@ msgstr ""
 msgid "Oops! That page can't be found"
 msgstr ""
 
-#: patterns/blog-header.php:21
+#: patterns/blog-header.php:20
 msgid "Recent From Blog"
 msgstr ""
 
-#: patterns/featured-content-default.php:19
+#: patterns/featured-content-default.php:18
 msgid "Show titles"
 msgstr ""
 
-#: patterns/featured-content-default.php:23
+#: patterns/featured-content-default.php:22
 msgid "Mar. 3, 2017"
 msgstr ""
 
-#: patterns/featured-content-default.php:41
+#: patterns/featured-content-default.php:40
 msgid "On Hover"
 msgstr ""
 
-#: patterns/featured-content-default.php:45
+#: patterns/featured-content-default.php:44
 msgid "Apr. 5, 2018"
 msgstr ""
 
-#: patterns/featured-content-default.php:63
+#: patterns/featured-content-default.php:62
 msgid "Or by Default"
 msgstr ""
 
-#: patterns/featured-content-default.php:67
+#: patterns/featured-content-default.php:66
 msgid "Aug. 13, 2019"
 msgstr ""
 
-#: patterns/footer-three-columns.php:17 patterns/sidebar.php:13
+#: patterns/footer-three-columns.php:16 patterns/sidebar.php:12
 msgid "About"
 msgstr ""
 
-#: patterns/footer-three-columns.php:21
+#: patterns/footer-three-columns.php:20
 msgid ""
 "Fotografie Blocks is a Responsive Blogging WordPress Theme that comes with a modern, sleek "
 "design and advance functionalities. The theme is also multipurpose and ideal for all business "
 "purposes as well as personal sites."
 msgstr ""
 
-#: patterns/footer-three-columns.php:31
+#: patterns/footer-three-columns.php:30
 msgid "Quick Links"
 msgstr ""
 
-#: patterns/footer-three-columns.php:43 patterns/sidebar-products.php:24
+#: patterns/footer-three-columns.php:42 patterns/sidebar-products.php:36
 msgid "Categories"
 msgstr ""
 
-#: patterns/footer.php:32
+#: patterns/footer.php:31
 #, php-format
 msgctxt "1: Year, 2: Site Title with home URL, 3: Privacy Policy Link"
 msgid "Copyright &copy; %1$s %2$s"
 msgstr ""
 
-#: patterns/footer.php:33
+#: patterns/footer.php:32
 msgid "Y"
 msgstr ""
 
-#: patterns/hero-content-default.php:18
+#: patterns/hero-content-default.php:17
 msgid "Hero Content"
 msgstr ""
 
-#: patterns/hero-content-default.php:22
+#: patterns/hero-content-default.php:21
 msgid ""
 "Showcase the best feature of your business on the Hero Content Section. The new multipurpose "
 "WordPress theme allows you to underscore your best content. Apparently we had reached a great "
@@ -211,7 +211,7 @@ msgid ""
 "Punta Mala to Azuera."
 msgstr ""
 
-#: patterns/hero-content-default.php:29
+#: patterns/hero-content-default.php:28
 msgid "Get Started"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Oops! That page can't be found. Maybe try a search?"
 msgstr ""
 
-#: patterns/hidden-blog.php:11 patterns/recent-blog-posts.php:13
+#: patterns/hidden-blog.php:10 patterns/recent-blog-posts.php:12
 msgid "News"
 msgstr ""
 
@@ -227,40 +227,80 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
+#: patterns/product-faq.php:12
+msgid "Got Questions ?"
+msgstr ""
+
+#: patterns/product-faq.php:18
+msgid "Shipping & Returns Information"
+msgstr ""
+
+#: patterns/product-faq.php:22
+msgid "Shop with confidence, knowing your order is safe and hassle-free."
+msgstr ""
+
+#: patterns/product-faq.php:29
+msgid "Whats Included"
+msgstr ""
+
+#: patterns/product-faq.php:33
+msgid "Includes all essential components for immediate use, right out of the box."
+msgstr ""
+
+#: patterns/secure-transactions.php:12
+msgid "Trusted & Secure Payments"
+msgstr ""
+
 #: patterns/shop-header.php:23
 msgid "The Shop"
 msgstr ""
 
-#: patterns/sidebar-products.php:14
+#: patterns/shopping-features.php:18
+msgid "Hassle-free returns and exchanges within a month"
+msgstr ""
+
+#: patterns/shopping-features.php:29
+msgid "Free shipping on all orders over $100"
+msgstr ""
+
+#: patterns/shopping-features.php:40
+msgid " 100% Quality Guaranteed"
+msgstr ""
+
+#: patterns/sidebar-products.php:16
+msgid "Filters"
+msgstr ""
+
+#: patterns/sidebar-products.php:26
 msgid "Search Products"
 msgstr ""
 
-#: patterns/sidebar-products.php:34
+#: patterns/sidebar-products.php:46
 msgid "Filter by price"
 msgstr ""
 
-#: patterns/sidebar-products.php:50
+#: patterns/sidebar-products.php:62
 msgid "Filter by size"
 msgstr ""
 
-#: patterns/sidebar-products.php:66
+#: patterns/sidebar-products.php:78
 msgid "Filter by Color"
 msgstr ""
 
-#: patterns/sidebar.php:21
+#: patterns/sidebar.php:20
 msgid ""
 "Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Maecenas odio lacus, dignissim "
 "sollicitudin finibus commodo, rhoncus et ante."
 msgstr ""
 
-#: patterns/sidebar.php:28
+#: patterns/sidebar.php:27
 msgid "latest post"
 msgstr ""
 
-#: patterns/sidebar.php:38
+#: patterns/sidebar.php:37
 msgid "categories"
 msgstr ""
 
-#: patterns/sidebar.php:47
+#: patterns/sidebar.php:46
 msgid "Follow Us"
 msgstr ""

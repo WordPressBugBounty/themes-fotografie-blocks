@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Footer Three Columns
  * Slug: fotografie-blocks/footer-three-columns

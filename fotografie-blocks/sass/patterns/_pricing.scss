@@ -1,0 +1,106 @@
+/* --- Block Pricing
+-------------------------------------------------------- */
+
+.wp-block-section:nth-child(2n+1).wp-block-pricing {
+    .pricing-group {
+        background-color: var(--wp--preset--color--background);
+    }
+
+    .pricing-group.popular-plan {
+        background-color: var(--wp--preset--color--foreground);
+        * {
+            :not(.wp-block-button__link) {
+                color: var(--wp--preset--color--background) !important;
+            }
+
+        }
+
+        li::marker {
+            color: var(--wp--preset--color--background) !important
+        }
+    }
+}
+
+.wp-block-section.wp-block-pricing {
+    .pricing-group {
+        background-color: var(--wp--preset--color--secondary);
+    }
+
+    .pricing-group.popular-plan {
+        background-color: var(--wp--preset--color--foreground);
+        * {
+            :not(.wp-block-button__link) {
+                color: var(--wp--preset--color--background) !important;
+            }
+
+        }
+
+        li::marker {
+            color: var(--wp--preset--color--background) !important
+        }
+
+        .wp-block-button {
+        .wp-block-button__link {
+            background-color: var(--wp--preset--color--background);
+            color: var(--wp--preset--color--foreground);
+            &:hover {
+                background: var(--wp--preset--color--meta);
+                color: var(--wp--preset--color--color-light);
+                }
+            }
+        }
+    }
+
+    ul {
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .wp-block-button {
+        .wp-block-button__link {
+            border: none;
+            &:hover {
+                border: none;
+            }
+        }
+    }
+}
+
+// Modern Pricing
+.wp-block-section:nth-child(2n+1).wp-block-pricing-modern {
+
+    .pricing-group.popular-plan {
+        background-color: var(--wp--preset--color--primary-alt);
+        .price-is-round {
+            background-color: var(--wp--preset--color--color-light) !important;
+            * {
+                color: var(--wp--preset--color--color-dark) !important;
+            }
+        }
+    }
+}
+
+.wp-block-section.wp-block-pricing-modern {
+    .pricing-group.popular-plan {
+        background-color: var(--wp--preset--color--primary-alt);
+        z-index: 1;
+        .price-is-round {
+            background-color: var(--wp--preset--color--color-light) !important;
+            * {
+                color: var(--wp--preset--color--color-dark) !important;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        list-style-position: outside;
+    }
+}
+
+
+.price-is-round {
+    width: clamp(150px,10.5vw,200px);
+    height: clamp(150px, 10.5vw, 200px)
+}
+

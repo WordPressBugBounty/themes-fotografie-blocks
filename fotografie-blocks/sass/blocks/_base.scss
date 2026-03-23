@@ -53,6 +53,7 @@ a:active {
 	color: var(--wp--preset--color--background);
 	font-size: var(--wp--preset--font-size--medium);
 	padding: calc(.667em + 2px) calc(1.333em + 2px);
+	margin-left: 0;
 }
 
 /*
@@ -71,7 +72,7 @@ a:active {
  * Alignment styles.
  * These rules are temporary, and should not be relied on or
  * modified too heavily by themes or plugins that build on
- * Fotografie Blocks. These are meant to be a precursor to
+ * Fotografie Blocks Pro. These are meant to be a precursor to
  * a global solution provided by the Block Editor.
  *
  * Relevant issues:

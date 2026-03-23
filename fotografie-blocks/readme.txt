@@ -26,6 +26,19 @@ When changing the theme style, it is recommended to clear the template customiza
 
 == Changelog ==
 
+= 2.0 (Released: March 23, 2026) =
+* Added: Product Collection template part
+* Added: Custom JS for WooCommerce quantity buttons
+* Added: WooCommerce Filter for mobile devices
+* Added: Product FAQ pattern
+* Added: Secure Transactions pattern
+* Added: Shopping Features pattern
+* Bug Fixed: Spacing issue in patterns
+* Bug Fixed: PHP standardization in patterns
+* Updated: Single Product template with newly added patterns
+* Updated: All the classic/static WooCommerce product patterns, parts, and templates
+* Updated: Minor CSS
+
 = 1.2.2 (Released: December 31, 2025) =
 * Updated: WordPress 6.9 ready
 
@@ -81,10 +94,10 @@ When changing the theme style, it is recommended to clear the template customiza
 
 == Copyright ==
 
-Fotografie Blocks WordPress Theme, 2023 Catchthemes.com
+Fotografie Blocks WordPress Theme, 2012-2026 Catchthemes.com
 Fotografie Blocks is distributed under the terms of the GNU GPL.
 
-Fotografie Blocks is based on Catch FSE WordPress Theme, 2012-2023 Catchthemes.com
+Fotografie Blocks is based on Catch FSE WordPress Theme, 2012-2026 Catchthemes.com
 Catch FSE is distributed under the terms of the GNU GPL.
 
 == Resources ==

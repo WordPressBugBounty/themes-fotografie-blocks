@@ -185,3 +185,16 @@
       padding-right: 0;
     }
 }
+
+
+
+// Header Media Text Top
+.header-media-text-top {
+  .wp-block-button .wp-block-button__link {
+    &:hover {
+        background: var(--wp--preset--color--meta) !important;
+        color: var(--wp--preset--color--color-light) !important;
+    }
+
+  }
+}

@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Header Media Top
  * Slug: fotografie-blocks/header-media-top

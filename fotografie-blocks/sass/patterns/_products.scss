@@ -1,0 +1,13 @@
+/* --- Block Products
+-------------------------------------------------------- */
+
+.wc-block-grid.products-listing {
+    padding-left: var(--wp--preset--spacing--60);
+    padding-right: var(--wp--preset--spacing--60);
+}
+
+
+// Review
+.wp-block-reviews-default .fse-slider-wrapper .wp-block-image {
+    text-align: left;
+}

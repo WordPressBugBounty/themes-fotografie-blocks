@@ -1,0 +1,128 @@
+/* --- Block Music
+-------------------------------------------------------- */
+.wp-block-music-playlist {
+    .simple-audio-player {
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: var(--wp--preset--color--foreground);
+        font-family: var(--wp--preset--font-family--montserrat);
+        max-width: 100%;
+        font-size: 16px;
+        font-weight: 300;
+        .simp-player {
+            background-color: var(--wp--preset--color--secondary);
+            input[type="range"]::-moz-range-thumb {
+                background-color: var(--wp--preset--color--primary);
+                border: 0;
+                &:hover {
+                    border: 0;
+                }
+            }
+            .simp-others {
+                display: none;
+            }
+            .simp-prev,
+            .simp-next {
+                display: none;
+            }
+            button.simp-plause {
+                background: var(--wp--preset--gradient--gradient-1);
+                border-radius: 50%;
+                padding: 12px;
+                font-size: 100%;
+                &:hover {
+                    background: var(--wp--preset--gradient--gradient-1) !important;
+                }
+            }
+            .simp-controls {
+                padding: 18px;
+                .simp-mute {
+                    padding: 0 2px;
+                }
+            }
+        }
+        .simp-display {
+            display: none;
+        }
+
+        .simp-playlist {
+            padding: 17px 0;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    span {
+                        display: block;
+                    }
+                    .simp-source {
+                        color: var(--wp--preset--color--meta);
+                        transition: all 0.3s ease-in-out;
+                    }
+                    .simp-desc {
+                        color: var(--wp--preset--color--meta);
+                        margin-left: 0;
+                        font-size: 14px;
+                        opacity: 1;
+                        margin-top: 7px;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover {
+                        background: transparent;
+                        .simp-source {
+                            color: var(--wp--preset--color--foreground);
+                        }
+                        .simp-desc {
+                            color: var(--wp--preset--color--foreground);
+                        }
+                    }
+                }
+                li.simp-active {
+                    background: transparent;
+                    .simp-source {
+                        color: var(--wp--preset--color--foreground);
+                    }
+                    .simp-desc {
+                        color: var(--wp--preset--color--foreground);
+                    }
+                }
+                li:nth-child(2n+1) {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
+
+.wp-block-section:nth-child(2n+1).wp-block-music-playlist {
+    .simple-audio-player {
+        .simp-player {
+            background-color: var(--wp--preset--color--background);
+        }
+    }
+}
+
+
+/* --- Block Event
+-------------------------------------------------------- */
+
+.wp-block-music-events {
+    .wp-block-button.is-style-outline {
+
+        .wp-block-button__link {
+            &:hover {
+                border-color: transparent !important;
+                color: var(--wp--preset--color--foreground);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 48.875em) {
+    .wp-block-music-events {
+        .event-date {
+            border-right: 1px solid var(--wp--preset--color--meta);
+            padding-right: 21px;
+        }
+    }
+}

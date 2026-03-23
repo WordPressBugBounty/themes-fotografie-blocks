@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Sidebar
  * Slug: fotografie-blocks/sidebar

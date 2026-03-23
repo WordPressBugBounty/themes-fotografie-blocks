@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Header
  * Slug: fotografie-blocks/header

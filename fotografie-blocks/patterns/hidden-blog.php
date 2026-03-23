@@ -6,6 +6,5 @@
   */
 ?>
 
-
 <?php
 esc_html_e ( 'News', 'fotografie-blocks' );

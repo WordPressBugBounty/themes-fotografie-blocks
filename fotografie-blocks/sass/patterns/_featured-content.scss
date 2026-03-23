@@ -35,7 +35,8 @@
 
 .wp-block-feature-content .wp-block-button.is-style-outline .wp-block-button__link,
 .wp-block-team .wp-block-button.is-style-outline .wp-block-button__link,
-.wp-block-services .wp-block-button.is-style-outline .wp-block-button__link {
+.wp-block-services .wp-block-button.is-style-outline .wp-block-button__link,
+.wp-block-button.is-style-outline.btn-with-line .wp-block-button__link {
     border: 0;
     position: relative;
     border-radius: 0;
@@ -46,7 +47,8 @@
 
 .wp-block-feature-content .wp-block-button.is-style-outline .wp-block-button__link:after,
 .wp-block-team .wp-block-button.is-style-outline .wp-block-button__link:after,
-.wp-block-services .wp-block-button.is-style-outline .wp-block-button__link:after {
+.wp-block-services .wp-block-button.is-style-outline .wp-block-button__link:after,
+.wp-block-button.is-style-outline.btn-with-line .wp-block-button__link:after {
     content: "";
     border-bottom: 2px solid var(--wp--preset--color--primary);
     position: absolute;
@@ -59,7 +61,8 @@
 
 .wp-block-feature-content .wp-block-button.is-style-outline .wp-block-button__link:hover::after,
 .wp-block-team .wp-block-button.is-style-outline .wp-block-button__link:hover::after,
-.wp-block-services .wp-block-button.is-style-outline .wp-block-button__link:hover::after {
+.wp-block-services .wp-block-button.is-style-outline .wp-block-button__link:hover::after,
+.wp-block-button.is-style-outline.btn-with-line .wp-block-button__link:hover::after {
     width: 30%;
 }
 
@@ -73,6 +76,37 @@
     background: transparent !important;
 }
 
+.wp-block-button.is-style-outline.btn-with-line {
+    .wp-block-button__link {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: var(--wp--preset--color--color-light);
+        margin-top: 0;
+        &:hover {
+            background-color: transparent;
+            color: var(--wp--preset--color--primary);
+        }
+    }
+}
+
+.wp-block-button.is-style-outline.btn-no-line {
+    .wp-block-button__link {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: var(--wp--preset--color--foreground);
+        margin-top: 0;
+        font-family: var(--wp--preset--font-family--oswald);
+        font-size: 16px;
+        font-weight: 500;
+        &:hover {
+            background-color: transparent;
+            color: var(--wp--preset--color--meta);
+        }
+    }
+}
+
 
 /* --- Block Hero Content
 -------------------------------------------------------- */
@@ -80,6 +114,38 @@
 .wp-block-hero-content.wp-block-section .wp-block-group-heading {
     margin-bottom: 28px;
 }
+
+.wp-block-hero-content-has-quote {
+    .wp-block-quote {
+        padding-left: 0;
+        margin-top: 42px;
+        background-color: var(--wp--preset--color--secondary);
+        color: var(--wp--preset--color--foreground);
+        padding: var(--wp--preset--spacing--60) var(--wp--preset--spacing--50) var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+        border-left: 7px solid var(--wp--preset--color--primary-alt);
+        &:before {
+            font-family: Arial;
+            top: -44px;
+            left: var(--wp--preset--spacing--30);
+            transform: none;
+            color: var(--wp--preset--color--body-text-alt);
+            font-size: 130px;
+            font-weight: 700;
+            opacity: 0.3;
+        }
+    }
+}
+
+.wp-block-section:nth-child(2n+1).wp-block-hero-content-has-quote {
+    .wp-block-quote {
+        background-color: var(--wp--preset--color--background);
+        color: var(--wp--preset--color--foreground);
+        &:before {
+            color: var(--wp--preset--color--body-text-alt);
+        }
+    }
+}
+
 
 /* --- Block Team
 -------------------------------------------------------- */
@@ -139,4 +205,133 @@
 .wp-block-team .wp-block-post-group:hover .wp-block-entry-content > .wp-block-buttons {
     animation: fadein 1s;
     transform: translateY(0px);
+}
+
+//Team Modern
+
+.wp-block-team-modern {
+    .wp-block-social-links .wp-social-link .wp-block-social-link-anchor {
+        background-color: var(--wp--preset--color--primary) !important;
+        border-radius: 0 !important;
+        svg {
+            color: var(--wp--preset--color--background) !important;
+            fill: var(--wp--preset--color--background) !important;
+        }
+        &:hover {
+            background-color: var(--wp--preset--color--foreground) !important;
+            svg {
+                color: var(--wp--preset--color--background) !important;
+                fill: var(--wp--preset--color--background) !important;
+            }
+        }
+    }
+
+    .wp-block-entry-content .wp-block-post-cont,
+    .wp-block-entry-content > *:not(.wp-block-buttons) {
+        transform: translateY(190px);
+    }
+
+    .wp-block-entry-content {
+        padding: 0;
+        .wp-block-post-cont {
+            border-bottom: 7px solid var(--wp--preset--color--primary);
+            position: relative;
+            padding: 28px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                background-color: var(--wp--preset--color--background);
+                opacity: 0.8;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .wp-block-team-modern {
+        .wp-block-entry-content {
+            position: static;
+
+            .wp-block-post-cont {
+                &:before {
+                    background-color: var(--wp--preset--color--foreground);
+                    opacity: 0.1;
+                }
+
+            }
+        }
+
+        .wp-block-entry-content .wp-block-post-cont,
+        .wp-block-entry-content > *:not(.wp-block-buttons) {
+            transform: translateY(0);
+        }
+
+        .wp-block-post-group:hover {
+            .wp-block-entry-content > *:not(.wp-block-buttons) {
+                transform: translateY(0px);
+                animation: none;
+            }
+        }
+        .wp-block-post-group {
+            &:before {
+                background-color: transparent;
+                opacity: 0 !important;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+// Moderm
+
+.wp-block-section:nth-child(2n+1).wp-block-featured-content-modern {
+    .wp-block-entry-content {
+        background-color: var(--wp--preset--color--background);
+    }
+}
+
+.wp-block-section.wp-block-featured-content-modern {
+    .wp-block-image {
+        margin-bottom: 0;
+    }
+    .wp-block-entry-content {
+        background-color: var(--wp--preset--color--secondary);
+        .wp-block-button__link {
+            padding: 0;
+            border: 0;
+            &:hover {
+                background-color: transparent;
+                color: var(--wp--preset--color--meta);
+            }
+        }
+    }
+}
+
+p strong {
+    font-weight: 700;
+}
+
+
+// Booking
+
+.wp-block-booking {
+    input[type="submit"] {
+        color: var(--wp--preset--color--foreground);
+        font-weight: 700;
+        letter-spacing: 0;
+        padding: 14px 35px;
+        width: 100%;
+        &:hover {
+            color: var(--wp--preset--color--color-light);
+        }
+    }
+     input[type="date"] {
+        height: 44px;
+    }
 }

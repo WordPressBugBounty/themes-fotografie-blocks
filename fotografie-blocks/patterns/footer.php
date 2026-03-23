@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Title: Footer
  * Slug: fotografie-blocks/footer

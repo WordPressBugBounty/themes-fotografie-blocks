@@ -103,22 +103,22 @@
 }
 
 
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider {
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider {
     display: block;
 }
 
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-left,
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-center,
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-right,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-left,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-center,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-right,
 .horizontal-outside-slider-bottom-left,
 .horizontal-outside-slider-bottom-center,
 .horizontal-outside-slider-bottom-right {
     padding-bottom: 59px;
 }
 
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-left+.swiper-pagination,
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-center+.swiper-pagination,
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-right+.swiper-pagination,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-left+.swiper-pagination,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-center+.swiper-pagination,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-right+.swiper-pagination,
 .horizontal-outside-slider-bottom-left .swiper-pagination,
 .horizontal-outside-slider-bottom-center .swiper-pagination,
 .horizontal-outside-slider-bottom-right .swiper-pagination {
@@ -129,21 +129,21 @@
 }
 
 .horizontal-inside-slider-bottom-left .swiper-pagination,
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-left+.swiper-pagination,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-left+.swiper-pagination,
 .horizontal-outside-slider-bottom-left .swiper-pagination {
     text-align: left;
     left: 14px;
 }
 
 .horizontal-inside-slider-bottom-center .swiper-pagination,
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-center+.swiper-pagination,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-center+.swiper-pagination,
 .horizontal-outside-slider-bottom-center .swiper-pagination {
     left: 50%;
     transform: translateX(-50%);
 }
 
 .horizontal-inside-slider-bottom-right .swiper-pagination,
-.block-editor-block-list__block.wp-block-fotografie-blocks-slider.wp-block-fotografie-blocks-slider .horizontal-outside-slider-bottom-right+.swiper-pagination,
+.block-editor-block-list__block.wp-block-fotografie-blocks-pro-slider.wp-block-fotografie-blocks-pro-slider .horizontal-outside-slider-bottom-right+.swiper-pagination,
 .horizontal-outside-slider-bottom-right .swiper-pagination {
     text-align: right;
     right: 14px;
@@ -168,8 +168,8 @@
 
 /* Slider Arrows */
 
-.fotografie-blocks-slider .swiper-button-prev,
-.fotografie-blocks-slider .swiper-button-next,
+.fotografie-blocks-pro-slider .swiper-button-prev,
+.fotografie-blocks-pro-slider .swiper-button-next,
 .fse-slider-wrapper .swiper-button {
     background-color: transparent;
     color: var(--wp--preset--color--color-light);
@@ -197,7 +197,7 @@ main .wp-block-featured-slider>*+* {
 }
 
 
-.wp-block-featured-slider .wp-block-fotografie-blocks-popup-video {
+.wp-block-featured-slider .wp-block-fotografie-blocks-pro-popup-video {
     text-align: center;
 }
 

@@ -57,3 +57,20 @@
             background-color: var(--wp--preset--color--background);
     }
 }
+
+
+.wp-block-clients-testimonial {
+    .fotografie-blocks-pro-slider .swiper-button-prev,
+    .fotografie-blocks-pro-slider .swiper-button-next,
+    .fse-slider-wrapper .swiper-button {
+
+        color: var(--wp--preset--color--meta);
+        &:hover {
+            background-color: var(--wp--preset--color--foreground);
+            color: var(--wp--preset--color--background);
+
+
+        }
+    }
+}
+

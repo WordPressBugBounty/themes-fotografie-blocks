@@ -1,9 +1,9 @@
 <?php
- /**
-  * Title: Post Header
-  * Slug: fotografie-blocks/post-header
-  * Categories: fotografie-blocks, header
-  */
+/**
+ * Title: Post Header
+ * Slug: fotografie-blocks/post-header
+ * Categories: fotografie-blocks, header
+ */
 ?>
 
 <!-- wp:group {"align":"full","className":"no-margin-top header-media-inner-post","layout":{"inherit":true,"type":"constrained"}} -->

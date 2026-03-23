@@ -36,7 +36,7 @@
     }
 }
 
-.wp-block-contact .fotografie-blocks-icons svg {
+.wp-block-contact .fotografie-blocks-pro-icons svg {
     color: var(--wp--preset--color--primary);
     fill: var(--wp--preset--color--primary);
 }
@@ -104,5 +104,76 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+
+// Contact Modern
+.wp-block-contact-modern {
+    .contact-information {
+
+        a {
+            text-decoration: none;
+                color: var(--wp--preset--color--color-light);
+
+                &:hover {
+                    color: var(--wp--preset--color--meta);
+                }
+            }
+            .image-icon-block {
+                height: clamp(60px, 3.5vw, 80px);
+                width: clamp(60px, 3.5vw, 80px);
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+
+    .wpcf7-form input[type="date"],
+    .wpcf7-form input[type="time"],
+    .wpcf7-form input[type="datetime-local"],
+    .wpcf7-form input[type="week"],
+    .wpcf7-form input[type="month"],
+    .wpcf7-form input[type="text"],
+    .wpcf7-form input[type="email"],
+    .wpcf7-form input[type="url"],
+    .wpcf7-form input[type="password"],
+    .wpcf7-form input[type="search"],
+    .wpcf7-form input[type="tel"],
+    .wpcf7-form input[type="number"],
+    .wpcf7-form textarea {
+        background-color: transparent;
+        border: 1px solid var(--wp--preset--color--meta);
+        color: var(--wp--preset--color--body-text-alt);
+        &:focus {
+            color: var(--wp--preset--color--color-light);
+            border-color: var(--wp--preset--color--primary);
+
+        }
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+.wp-block-contact-modern .contact-form .wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wp-block-contact-modern .contact-form .wpcf7-form > p:nth-last-of-type(-n+2) {
+    width: 100%;
+}
+
+.wp-block-contact-modern .contact-form .wpcf7-form > p:not(:nth-last-of-type(-n+2)) {
+    width: 48%;
+    float: left;
+    box-sizing: border-box;
+}
+}
+
+@media screen and (min-width: 37.5em) {
+    .wp-block-contact-modern .wpcf7-form > p {
+        margin-top: 0px;
+    }
 }
 
