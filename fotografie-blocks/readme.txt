@@ -26,6 +26,11 @@ When changing the theme style, it is recommended to clear the template customiza
 
 == Changelog ==
 
+= 2.0.1 (Released: May 05, 2026) =
+* Bug Fixed: Add to cart button issue for group product
+* Bug Fixed: Search icon position issue in editor
+* Updated: Minify custom js
+
 = 2.0 (Released: March 23, 2026) =
 * Added: Product Collection template part
 * Added: Custom JS for WooCommerce quantity buttons

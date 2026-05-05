@@ -2358,3 +2358,13 @@ body .wp-block-inner-page-title {
     }
   }
 }
+
+.block-editor-block-list__block.positioned-search {
+  position: absolute;
+}
+
+.wp-block-main-header {
+  >.block-editor-block-list__block:first-child {
+    position: static;
+  }
+}

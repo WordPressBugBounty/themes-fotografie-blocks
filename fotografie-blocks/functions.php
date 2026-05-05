@@ -52,9 +52,9 @@ if ( ! function_exists( 'fotografie_blocks_styles' ) ) :
 
 		wp_enqueue_script(
 			'fotografie-blocks-script',
-			get_theme_file_uri( 'assets/js/custom.js' ),
+			get_theme_file_uri( 'assets/js/custom.min.js' ),
 			array(),
-			filemtime( get_theme_file_path( 'assets/js/custom.js' ) ),
+			filemtime( get_theme_file_path( 'assets/js/custom.min.js' ) ),
 			true
 		);
 	}

@@ -2445,6 +2445,12 @@ cart-collaterals .cart_totals .shop_table td {
   }
 }
 
+@media screen and (max-width: 781px) {
+  .wp-block-woocommerce-add-to-cart-form form.cart.grouped_form {
+    display: inline;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .wp-block-group.wp-faq-main {
     flex-direction: column;
