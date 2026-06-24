@@ -9,10 +9,10 @@
 <!-- wp:buttons {"className":"btn-mobile-filters","style":{"spacing":{"margin":{"top":"var:preset|spacing|14","bottom":"var:preset|spacing|60"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
 <div class="wp-block-buttons btn-mobile-filters"
 	style="margin-top:var(--wp--preset--spacing--14);margin-bottom:var(--wp--preset--spacing--60)">
-	<!-- wp:button {"className":"is-style-outline","style":{"typography":{"lineHeight":"1.56","textTransform":"uppercase"},"border":{"radius":"0px","width":"1px"}},"fontSize":"medium","borderColor":"border-color"} -->
+	<!-- wp:button {"className":"is-style-outline","style":{"typography":{"lineHeight":"1.56","textTransform":"uppercase"},"border":{"radius":"0px","width":"1px"}},"fontSize":"medium","borderColor":"border-default-color"} -->
 	<div class="wp-block-button has-custom-font-size is-style-outline has-medium-font-size"
 		style="line-height:1.56;text-transform:uppercase"><a
-			class="wp-block-button__link has-border-color has-border-color-border-color wp-element-button"
+			class="wp-block-button__link has-border-color has-border-default-color-border-color wp-element-button"
 			style="border-width:1px;border-radius:0px"><?php esc_html_e('Filters', 'fotografie-blocks'); ?></a></div>
 	<!-- /wp:button -->
 </div>

@@ -1,7 +1,7 @@
 === Fotografie Blocks ===
 Contributors: catchthemes
 Requires at least: 5.9
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,12 @@ When changing the theme style, it is recommended to clear the template customiza
 5. Navigate to Appearance -> Editor in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 2.1 (Released: June 23, 2026) =
+* Bug Fixed: Welcome panel background color issue in theme admin page
+* Bug Fixed: Mobile menu spacing and layout issues on small screens
+* Updated: Renamed border-color slug to border-default-color to avoid conflict with WordPress core styles naming
+* Updated: WordPress 7.0 ready
 
 = 2.0.1 (Released: May 05, 2026) =
 * Bug Fixed: Add to cart button issue for group product

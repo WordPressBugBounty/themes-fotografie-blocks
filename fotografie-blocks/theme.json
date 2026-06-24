@@ -356,9 +356,9 @@
 					"name": "Meta"
 				},
 				{
-					"slug": "border-color",
+					"slug": "border-default-color",
 					"color": "#191919",
-					"name": "Border"
+					"name": "Border Default Color"
 				},
 				{
 					"slug": "color-light",
@@ -635,7 +635,7 @@
 					"radius": "0",
 					"width": "1px",
 					"style": "solid",
-					"color": "var(--wp--preset--color--border-color)"
+					"color": "var(--wp--preset--color--border-default-color)"
 				},
 				"spacing": {
 					"padding": {
@@ -675,7 +675,7 @@
 				"border": {
 					"width": "1px",
 					"style": "solid",
-					"color": "var(--wp--preset--color--border-color)"
+					"color": "var(--wp--preset--color--border-default-color)"
 				},
 				"spacing": {
 					"padding": {

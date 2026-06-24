@@ -57,7 +57,7 @@
 
 .wp-block-post-comments .commentlist > li > .children > li article,
 .wp-block-post-comments .commentlist > li > article {
-   border-bottom: 1px solid var(--wp--preset--color--border-color);
+   border-bottom: 1px solid var(--wp--preset--color--border-default-color);
    padding-bottom: var(--wp--custom--spacing--normal);
    padding-top: var(--wp--custom--spacing--normal);
 }
@@ -162,7 +162,7 @@
 .wp-block-post-comments textarea,
 .wp-block-post-comments input:not([type="submit"]):not([type="checkbox"]) {
    background-color: var(--wp--preset--color--background);
-   border: 1px solid var(--wp--preset--color--border-color);
+   border: 1px solid var(--wp--preset--color--border-default-color);
    color: var(--wp--preset--color--body-text);
 }
 
@@ -207,7 +207,7 @@
 }
 
 .wp-block-latest-comments .wp-block-latest-comments__comment {
-   border-bottom: 1px solid var(--wp--preset--color--border-color);
+   border-bottom: 1px solid var(--wp--preset--color--border-default-color);
    padding-bottom: var(--wp--custom--spacing--normal);
    padding-top: var(--wp--custom--spacing--normal);
    margin-bottom: 0;
@@ -411,7 +411,7 @@
 
 .wp-block-table td,
 .wp-block-table th {
-   border-color: var(--wp--preset--color--border-color);
+   border-color: var(--wp--preset--color--border-default-color);
    padding: 0.5em 1.4em;
 }
 
@@ -433,7 +433,7 @@
 }
 
 .wp-block-table table {
-   border: 1px solid var(--wp--preset--color--border-color);;
+   border: 1px solid var(--wp--preset--color--border-default-color);;
 }
 
 

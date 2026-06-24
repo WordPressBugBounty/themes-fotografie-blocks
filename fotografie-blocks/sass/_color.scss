@@ -117,12 +117,12 @@ a:focus svg.icon,
 .wp-block-testimonial .wp-block-separator,
 .woocommerce .woocommerce-result-count,
 .wp-site-blocks .wp-block-section:last-child.wp-woocommerce-shipping {
-  border-color: var(--wp--preset--color--border-color);
+  border-color: var(--wp--preset--color--border-default-color);
 }
 
 .wp-block-testimonial .wp-group-content:before,
 .wp-block-separator {
-  color: var(--wp--preset--color--border-color);
+  color: var(--wp--preset--color--border-default-color);
 }
 
 /* Light Color */

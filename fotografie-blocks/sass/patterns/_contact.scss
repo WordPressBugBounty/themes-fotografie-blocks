@@ -71,7 +71,7 @@
     input[type="number"],
     textarea {
         &:not([type="submit"]) {
-            background-color: var(--wp--preset--color--border-color);
+            background-color: var(--wp--preset--color--border-default-color);
         }
     }
 }

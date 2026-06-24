@@ -1,3 +1,7 @@
+.welcome-panel {
+    background-color: #151515;
+}
+
 .welcome-panel::before {
     background: unset;
 }
@@ -6,6 +10,7 @@
     display: block;
 
 }
+
 .welcome-panel-column.important-links {
     clear: both;
 }
@@ -76,8 +81,8 @@
     padding-bottom: 30px;
 }
 
- .appearance_page_fotografie-blocks-theme .welcome-panel-column-content table {
-     border: 1px solid #e5e4e4;
+.appearance_page_fotografie-blocks-theme .welcome-panel-column-content table {
+    border: 1px solid #e5e4e4;
     border-collapse: collapse;
     border-spacing: 0;
     margin-top: 2em;
@@ -91,12 +96,12 @@
 
 .appearance_page_fotografie-blocks-theme .welcome-panel-column-content table th,
 .appearance_page_fotografie-blocks-theme .welcome-panel-column-content table td {
-     padding: 1em;
-     text-align: center;
+    padding: 1em;
+    text-align: center;
 }
 
- .appearance_page_fotografie-blocks-theme .welcome-panel-column-content table tr:nth-child(2n) td {
-  background: #fbfbfb;
+.appearance_page_fotografie-blocks-theme .welcome-panel-column-content table tr:nth-child(2n) td {
+    background: #fbfbfb;
 }
 
 @media only screen and (min-width: 1600px) {
@@ -112,9 +117,9 @@
 }
 
 .compare-table .dashicons-yes {
-    color:#4ca54c;
+    color: #4ca54c;
 }
 
 .compare-table .dashicons-no {
-    color:#c83842;
+    color: #c83842;
 }

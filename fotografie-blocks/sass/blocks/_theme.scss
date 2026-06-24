@@ -86,7 +86,7 @@ a svg.icon,
 }
 
 .wp-block-group-heading .is-style-button .wp-block-button__link:hover::before {
-  background-color: var(--wp--preset--color--border-color);
+  background-color: var(--wp--preset--color--border-default-color);
   border-radius: 50%;
 }
 
@@ -527,7 +527,7 @@ input[type="submit"]:focus,
 
     &:nth-child(even) {
       .wp-block-post-column {
-        background: var(--wp--preset--color--border-color);
+        background: var(--wp--preset--color--border-default-color);
 
       }
     }
@@ -796,7 +796,7 @@ a svg.icon {
 
 .wp-block-main-header .wp-block-search .wp-block-search__input {
   background-color: var(--wp--preset--color--background);
-  border: 1px solid var(--wp--preset--color--border-color);
+  border: 1px solid var(--wp--preset--color--border-default-color);
   ;
   color: var(--wp--preset--color--body-text);
   padding: 7px 14px;
@@ -905,7 +905,7 @@ textarea {
 
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
   padding: 0;
-  border-color: var(--wp--preset--color--border-color);
+  border-color: var(--wp--preset--color--border-default-color);
   overflow: hidden;
   border: none;
 }
@@ -1229,12 +1229,12 @@ footer>*+* {
 
 .wp-block-footer-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container,
 .wp-block-footer-dark .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
-  background-color: var(--wp--preset--color--border-color);
+  background-color: var(--wp--preset--color--border-default-color);
 }
 
 .wp-block-footer .wp-block-social-links.is-style-logos-only .wp-social-link .wp-block-social-link-anchor,
 .wp-block-social-links.is-style-logos-only.is-style-logos-with-border .wp-social-link .wp-block-social-link-anchor {
-  border: 1px solid var(--wp--preset--color--border-color);
+  border: 1px solid var(--wp--preset--color--border-default-color);
 }
 
 .wp-block-footer .wp-block-social-links.is-style-logos-only .wp-social-link .wp-block-social-link-anchor:hover svg,
@@ -1435,7 +1435,7 @@ footer.wp-block-template-part,
 
 .wp-block-code>code {
   color: var(--wp--preset--color--body-text);
-  border-color: var(--wp--preset--color--border-color);
+  border-color: var(--wp--preset--color--border-default-color);
 }
 
 /* --- WP Block Firgcaption
@@ -1452,13 +1452,13 @@ figure figcaption {
 -------------------------------------------------------- */
 
 .wp-block-calendar table th {
-  border-color: var(--wp--preset--color--border-color);
+  border-color: var(--wp--preset--color--border-default-color);
   background-color: var(--wp--preset--color--secondary);
 }
 
 .wp-block-calendar th,
 .wp-block-calendar tbody td {
-  border-color: var(--wp--preset--color--border-color);
+  border-color: var(--wp--preset--color--border-default-color);
 }
 
 .wp-block-calendar tbody td#today {
@@ -1686,7 +1686,7 @@ figure figcaption {
 
   .wp-block-main-header .wp-block-search .wp-block-search__input {
     background-color: var(--wp--preset--color--color-dark);
-    border: 1px solid var(--wp--preset--color--border-color-alt);
+    border: 1px solid var(--wp--preset--color--border-default-color-alt);
     color: var(--wp--preset--color--body-text-alt);
   }
 
@@ -1738,7 +1738,7 @@ figure figcaption {
 }
 
 .footer-dark .wp-block-footer .wp-block-social-links.is-style-logos-only .wp-social-link .wp-block-social-link-anchor svg {
-  border-color: var(--wp--preset--color--border-color-alt);
+  border-color: var(--wp--preset--color--border-default-color-alt);
 }
 
 .footer-dark .wp-block-social-links.is-style-logos-only .wp-social-link .wp-block-social-link-anchor svg {
@@ -1805,7 +1805,7 @@ figure figcaption {
 
 /* Nan Arrows */
 .tns-control>button {
-  background: var(--wp--preset--color--border-color);
+  background: var(--wp--preset--color--border-default-color);
   border: 0;
   color: var(--wp--preset--color--foreground);
   cursor: pointer;
@@ -1867,7 +1867,7 @@ figure figcaption {
 /* Nav Dots */
 .tns-nav>button {
   border: 0;
-  background-color: var(--wp--preset--color--border-color);
+  background-color: var(--wp--preset--color--border-default-color);
   height: 10px;
   line-height: 10px;
   margin: 0 4px;
@@ -2017,7 +2017,7 @@ figure figcaption {
   width: 44px;
   height: 44px;
   padding: 12px;
-  border: 1px solid var(--wp--preset--color--border-color);
+  border: 1px solid var(--wp--preset--color--border-default-color);
   border-radius: 50%;
   box-sizing: border-box;
   transition: all 0.3s ease-in-out;
@@ -2367,4 +2367,16 @@ body .wp-block-inner-page-title {
   >.block-editor-block-list__block:first-child {
     position: static;
   }
+}
+
+/* After 7.0 Update */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open:not(.disable-default-overlay),
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+  padding-left: var(--wp--custom--spacing--outer);
+  padding-right: var(--wp--custom--spacing--outer);
+}
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-open,
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close {
+  color: var(--wp--preset--color--color-dark);
 }
