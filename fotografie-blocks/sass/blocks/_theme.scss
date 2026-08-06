@@ -328,6 +328,10 @@ header .wp-block-buttons .wp-block-button__link {
   display: none;
 }
 
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open:not(.disable-default-overlay) {
+  background-color: var(--wp--preset--color--secondary);
+}
+
 @media screen and (max-width: 1199px) {
 
   .items-justified-left.wp-block-navigation.is-content-justification-left,
@@ -1517,7 +1521,7 @@ figure figcaption {
   right: 0;
   top: 0;
   padding: 14px;
-
+  z-index: 2;
   .search-container {
     right: -14px;
     left: auto;
@@ -2374,9 +2378,4 @@ body .wp-block-inner-page-title {
 .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
   padding-left: var(--wp--custom--spacing--outer);
   padding-right: var(--wp--custom--spacing--outer);
-}
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-open,
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close {
-  color: var(--wp--preset--color--color-dark);
 }

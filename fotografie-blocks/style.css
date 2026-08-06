@@ -8,7 +8,7 @@ Description: Fotografie Blocks is a free modern and creative photography WordPre
 Requires at least: 5.9
 Tested up to: 7.0
 Requires PHP: 5.6
-Version: 2.1
+Version: 2.1.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: fotografie-blocks
@@ -779,6 +779,9 @@ header .wp-block-buttons .wp-block-button__link {
 .wp-block-footer .wp-block-navigation .has-child :where(.wp-block-navigation__submenu-container),
 .wp-block-footer .wp-block-navigation .wp-block-navigation__submenu-icon {
   display: none; }
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open:not(.disable-default-overlay) {
+  background-color: var(--wp--preset--color--secondary); }
 
 @media screen and (max-width: 1199px) {
   .items-justified-left.wp-block-navigation.is-content-justification-left,
@@ -1729,7 +1732,8 @@ figure figcaption {
   position: absolute;
   right: 0;
   top: 0;
-  padding: 14px; }
+  padding: 14px;
+  z-index: 2; }
   .positioned-search .search-container {
     right: -14px;
     left: auto;
@@ -2347,10 +2351,6 @@ body .wp-block-inner-page-title {
 .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
   padding-left: var(--wp--custom--spacing--outer);
   padding-right: var(--wp--custom--spacing--outer); }
-
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-open,
-.wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-close {
-  color: var(--wp--preset--color--color-dark); }
 
 /* --- 4
 -------------------------------------------------------- */

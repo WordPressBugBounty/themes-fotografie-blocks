@@ -26,6 +26,10 @@ When changing the theme style, it is recommended to clear the template customiza
 
 == Changelog ==
 
+= 2.1.1 (Released: August 06, 2026) =
+* Bug Fixed: Mobile menu background color issue
+* Bug Fixed: Primary search z-index issue in mobile for navigation overlay off
+
 = 2.1 (Released: June 23, 2026) =
 * Bug Fixed: Welcome panel background color issue in theme admin page
 * Bug Fixed: Mobile menu spacing and layout issues on small screens
